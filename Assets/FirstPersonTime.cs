@@ -33,5 +33,21 @@ public class FirstPersonTime : MonoBehaviour
         targetRotation = cam.transform.position + rotateValue;
         rotation = Quaternion.Euler(xRot, yRot, 0);
         cam.transform.rotation = rotation;
+
+        if (Input.GetKey(KeyCode.W))
+        {
+            cam.transform.position = new Vector3(5, 2, -2);
+        }
+
+        if (Input.GetKey(KeyCode.E))
+        {
+            cam.transform.position = new Vector3(-1.2f, 2, 7.5f);
+        }
+
+        if (Input.GetKey(KeyCode.R))
+        {
+            cam.transform.position = new Vector3(12, 2, 14);
+        }
+
     }
 }
